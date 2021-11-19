@@ -26,10 +26,11 @@ let data = [
  ];
 
 let surname = prompt('Введите вашу фамилию', '');
+
 let info;
 
 for (let elem of data) {
-    if(elem.lastName == surname) {
+    if(elem.lastName.toLocaleLowerCase() == surname.toLocaleLowerCase()) {
         info = elem;
     }
 }
