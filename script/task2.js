@@ -4,9 +4,8 @@
 
 const friends = ['Валера', 'Лёша', 'Тимофей', 'Алла', 'Маша', 'Катя', 'Илья', 'Влад', 'Даша'];
 
-for (let i = 0; i < friends.length; i++) {
-    while (friends.indexOf(friends[i]) >=1 && friends.indexOf(friends[i]) <= 6) {
-        console.log(friends[i]);
-        break;
-    }
+let i = 1;
+while (i <= 6) {
+    console.log(friends[i]);
+    i++;
 }
