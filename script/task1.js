@@ -30,14 +30,13 @@ let surname = prompt('Введите вашу фамилию', '');
 let info;
 
 for (let elem of data) {
-    if(elem.lastName.toLocaleLowerCase() == surname.toLocaleLowerCase()) {
+    if(elem.lastName.toLowerCase() == surname.toLowerCase()) {
         info = elem;
     }
 }
 
 if(info) {
-    alert(`user name: ${info.firstName} ${info.lastName}
-           user age: ${info.age}`);    
+    alert('user name: ' + info.firstName + info.lastName + ' user age: ' + info.age);    
 } else {
     alert ('No results found for your request');
 }
